@@ -49,6 +49,7 @@ require('telescope').setup{
 
 require('telescope').load_extension('git_worktree')
 require('telescope').load_extension('fzf')
+require("telescope").load_extension('neoclip')
 
 vim.api.nvim_set_keymap('n', '<C-P>', "<cmd>lua require('telescope.builtin').find_files()<CR>", { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-F>', "<cmd>lua require('telescope.builtin').live_grep()<CR>", { noremap = true })
@@ -58,6 +59,9 @@ vim.api.nvim_set_keymap('n', '<C-G>', "<cmd>lua require('telescope.builtin').git
 vim.api.nvim_set_keymap('n', '<C-W>', "<cmd>lua require('telescope.builtin').git_commits()<CR>", { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-T>', "<cmd>lua require('telescope').extensions.git_worktree.git_worktrees()<CR>", { noremap = true })
 
+vim.api.nvim_set_keymap("n", "<C-n>", [[<Cmd>lua require('telescope').extensions.neoclip.plus()<CR>]],
+  { noremap = true, silent = true }
+)
 vim.api.nvim_set_keymap("n", "<leader>xx", "<cmd>Trouble<cr>",
   {silent = true, noremap = true}
 )
