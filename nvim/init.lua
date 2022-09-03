@@ -1,13 +1,21 @@
-require "basics"
-require "plugins"
-require "colors"
-require "trouble-config"
-require "telescope-config"
-require "treesitter-config"
-require "gitsigns-config"
-require "nvimtree-config"
-require "ruby-lsp"
-require "lsp-config"
-require "lualine-config"
-require "formatter-config"
-require "surround-config"
+require("user.options")
+require("user.keymaps")
+require("user.plugins")
+require("user.colors")
+require("user.customs")
+require("user.autocommands")
+require("user.plugins.telescope")
+require("user.plugins.nvim-tree")
+require("user.plugins.which_key")
+require("user.plugins.treesitter")
+require("user.plugins.lsp")
+require("user.plugins.project")
+require("user.plugins.yanky")
+require("user.plugins.comment")
+require("user.plugins.formatter")
+require("user.plugins.cmp")
+require("user.plugins.autopairs")
+require("user.plugins.gitsigns")
+require("user.plugins.lualine")
+require("user.plugins.blankline")
+require("user.plugins.toggleterm")
