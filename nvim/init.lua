@@ -1,12 +1,13 @@
-require('basics')
-require('plugins')
-require('colors')
-require('trouble-config')
-require('telescope-config')
--- require('snap-config')
--- require('fzf-config')
-require('treesitter-config')
-require('gitsigns-config')
-require('nvimtree-config')
-require('lsp-config')
-require('lualine-config')
+require "basics"
+require "plugins"
+require "colors"
+require "trouble-config"
+require "telescope-config"
+require "treesitter-config"
+require "gitsigns-config"
+require "nvimtree-config"
+require "ruby-lsp"
+require "lsp-config"
+require "lualine-config"
+require "formatter-config"
+require "surround-config"

@@ -90,6 +90,16 @@ _G.packer_plugins = {
     path = "/Users/be/.local/share/nvim/site/pack/packer/start/filetype.nvim",
     url = "https://github.com/nathom/filetype.nvim"
   },
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "/Users/be/.local/share/nvim/site/pack/packer/start/formatter.nvim",
+    url = "https://github.com/mhartington/formatter.nvim"
+  },
+  fzf = {
+    loaded = true,
+    path = "/Users/be/.local/share/nvim/site/pack/packer/start/fzf",
+    url = "https://github.com/junegunn/fzf"
+  },
   ["git-worktree.nvim"] = {
     loaded = true,
     path = "/Users/be/.local/share/nvim/site/pack/packer/start/git-worktree.nvim",
@@ -100,6 +110,12 @@ _G.packer_plugins = {
     path = "/Users/be/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["lspsaga.nvim"] = {
+    config = { "\27LJ\2\nA\0\0\4\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\1\2\0004\3\0\0B\1\2\1K\0\1\0\18init_lsp_saga\flspsaga\frequire\0" },
+    loaded = true,
+    path = "/Users/be/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    url = "https://github.com/glepnir/lspsaga.nvim"
+  },
   ["lualine-lsp-progress"] = {
     loaded = true,
     path = "/Users/be/.local/share/nvim/site/pack/packer/start/lualine-lsp-progress",
@@ -109,6 +125,18 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/be/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["nnn.nvim"] = {
+    loaded = true,
+    path = "/Users/be/.local/share/nvim/site/pack/packer/start/nnn.nvim",
+    url = "https://github.com/luukvbaal/nnn.nvim"
+  },
+  ["nvim-bqf"] = {
+    loaded = false,
+    needs_bufread = true,
+    only_cond = false,
+    path = "/Users/be/.local/share/nvim/site/pack/packer/opt/nvim-bqf",
+    url = "https://github.com/kevinhwang91/nvim-bqf"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -121,15 +149,20 @@ _G.packer_plugins = {
     path = "/Users/be/.local/share/nvim/site/pack/packer/start/nvim-neoclip.lua",
     url = "https://github.com/AckslD/nvim-neoclip.lua"
   },
-  ["nvim-tree.lua"] = {
+  ["nvim-spectre"] = {
     loaded = true,
-    path = "/Users/be/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/kyazdani42/nvim-tree.lua"
+    path = "/Users/be/.local/share/nvim/site/pack/packer/start/nvim-spectre",
+    url = "https://github.com/windwp/nvim-spectre"
   },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/be/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-treesitter-endwise"] = {
+    loaded = true,
+    path = "/Users/be/.local/share/nvim/site/pack/packer/start/nvim-treesitter-endwise",
+    url = "https://github.com/RRethy/nvim-treesitter-endwise"
   },
   ["nvim-ts-context-commentstring"] = {
     loaded = true,
@@ -171,19 +204,28 @@ _G.packer_plugins = {
     path = "/Users/be/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/be/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
-  },
   ["trouble.nvim"] = {
     loaded = true,
     path = "/Users/be/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
+  },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/Users/be/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
+  },
+  ["zephyr-nvim"] = {
+    loaded = true,
+    path = "/Users/be/.local/share/nvim/site/pack/packer/start/zephyr-nvim",
+    url = "https://github.com/glepnir/zephyr-nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: lspsaga.nvim
+time([[Config for lspsaga.nvim]], true)
+try_loadstring("\27LJ\2\nA\0\0\4\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\1\2\0004\3\0\0B\1\2\1K\0\1\0\18init_lsp_saga\flspsaga\frequire\0", "config", "lspsaga.nvim")
+time([[Config for lspsaga.nvim]], false)
 -- Config for: nvim-neoclip.lua
 time([[Config for nvim-neoclip.lua]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fneoclip\frequire\0", "config", "nvim-neoclip.lua")
@@ -192,10 +234,18 @@ time([[Config for nvim-neoclip.lua]], false)
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
 time([[Config for Comment.nvim]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Filetype lazy-loads
+time([[Defining lazy-load filetype autocommands]], true)
+vim.cmd [[au FileType qf ++once lua require("packer.load")({'nvim-bqf'}, { ft = "qf" }, _G.packer_plugins)]]
+time([[Defining lazy-load filetype autocommands]], false)
+vim.cmd("augroup END")
 if should_profile then save_profiles() end
 
 end)
 
 if not no_errors then
+  error_msg = error_msg:gsub('"', '\\"')
   vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: '..error_msg..'" | echom "Please check your config for correctness" | echohl None')
 end
