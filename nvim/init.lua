@@ -1,21 +1,7 @@
-require("user.options")
-require("user.keymaps")
-require("user.plugins")
-require("user.colors")
-require("user.customs")
-require("user.autocommands")
-require("user.plugins.telescope")
-require("user.plugins.nvim-tree")
-require("user.plugins.which_key")
-require("user.plugins.treesitter")
-require("user.plugins.lsp")
-require("user.plugins.project")
-require("user.plugins.yanky")
-require("user.plugins.comment")
-require("user.plugins.formatter")
-require("user.plugins.cmp")
-require("user.plugins.autopairs")
-require("user.plugins.gitsigns")
-require("user.plugins.lualine")
-require("user.plugins.blankline")
-require("user.plugins.toggleterm")
+
+require "user.impatient"
+require "user.options"
+require "user.keymaps"
+require "user.plugins"
+require "user.colorscheme"
+require "user.treesitter"
