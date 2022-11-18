@@ -49,3 +49,11 @@ keymap("i", "jk", "<ESC>", opts)
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
+
+---------------------------------------------------------------------------------
+-- Plugins
+-- ------------------------------------------------------------------------------
+
+keymap("n", "<C-\\>", '<Cmd>lua require"fzf-lua".buffers()<CR>', {})
+keymap("n", "<C-p>", '<Cmd>lua require"fzf-lua".files()<CR>', {})
+keymap("n", "<F1>", '<Cmd>lua require"fzf-lua".help_tags()<CR>', {})

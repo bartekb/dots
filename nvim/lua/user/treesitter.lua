@@ -9,7 +9,7 @@ if not status_ok then
 end
 
 configs.setup({
-  ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "ruby", "go" }, 
+  ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "ruby", "go", "css", "scss", "html", "javascript", "typescript", "yaml", "sql", "json", "tsx" }, 
 	ignore_install = { "" },
 	sync_install = false, 
   
