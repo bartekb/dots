@@ -10,6 +10,7 @@ require("mason-lspconfig").setup({
     "html",
     "cssls",
     "sumneko_lua",
+    "gopls",
   },
 })
 
@@ -17,13 +18,10 @@ require("user.lsp.null-ls")
 
 -- See :help lspconfig-global-defaults
 local lspconfig = require("lspconfig")
--- local lsp_defaults = lspconfig.util.default_config
+local lsp_defaults = lspconfig.util.default_config
 
--- lsp_defaults.capabilities = vim.tbl_deep_extend(
---   'force',
---   lsp_defaults.capabilities,
---   require('cmp_nvim_lsp').default_capabilities()
--- )
+lsp_defaults.capabilities =
+vim.tbl_deep_extend("force", lsp_defaults.capabilities, require("cmp_nvim_lsp").default_capabilities())
 
 ---
 -- Diagnostic customization

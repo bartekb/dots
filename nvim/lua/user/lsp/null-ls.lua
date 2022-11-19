@@ -19,6 +19,14 @@ null_ls.setup({
       -- extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
     }),
     formatting.stylua,
+    formatting.erb_lint,
+    formatting.gofmt,
+    formatting.gofumpt,
+    formatting.goimports,
+    formatting.goimports_reviser,
+    formatting.golines,
+    formatting.json_tool,
+    diagnostics.haml_lint,
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then
