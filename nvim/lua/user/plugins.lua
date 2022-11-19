@@ -50,12 +50,15 @@ return packer.startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
   }
+  use { 'RRethy/nvim-treesitter-endwise' }
   use { 'kyazdani42/nvim-web-devicons' }
   use { 'ibhagwan/fzf-lua'}
   use { 'nvim-lualine/lualine.nvim' }
   use { 'lewis6991/gitsigns.nvim'}
   use { "JoosepAlviste/nvim-ts-context-commentstring" }
   use { "numToStr/Comment.nvim" }
+  use { "moll/vim-bbye" }
+  use { "windwp/nvim-autopairs" } 
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()

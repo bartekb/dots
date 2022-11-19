@@ -12,7 +12,11 @@ configs.setup({
   ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "ruby", "go", "css", "scss", "html", "javascript", "typescript", "yaml", "sql", "json", "tsx" }, 
 	ignore_install = { "" },
 	sync_install = false, 
-  
+
+  endwise = {
+      enable = true,
+  },
+
   highlight = {
 		enable = true,
 		-- disable = { "css" }, 

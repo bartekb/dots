@@ -54,6 +54,11 @@ keymap("v", ">", ">gv", opts)
 -- Plugins
 -- ------------------------------------------------------------------------------
 
+-- FZF
 keymap("n", "<C-\\>", '<Cmd>lua require"fzf-lua".buffers()<CR>', {})
 keymap("n", "<C-p>", '<Cmd>lua require"fzf-lua".files()<CR>', {})
 keymap("n", "<F1>", '<Cmd>lua require"fzf-lua".help_tags()<CR>', {})
+
+-- Comment
+keymap("n", "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", opts)
+keymap("x", "<leader>/", '<ESC><CMD>lua require("Comment.api").toggle.linewise(vim.fn.visualmode())<CR>')
