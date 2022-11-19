@@ -1,12 +1,11 @@
-
-require "user.impatient"
-require "user.options"
-require "user.keymaps"
-require "user.plugins"
-require "user.colorscheme"
-require "user.treesitter"
-require "user.fzf"
-require "user.lualine"
-require "user.gitsigns"
-require "user.comment"
-require "user.autopairs"
+require("user.impatient")
+require("user.options")
+require("user.keymaps")
+require("user.plugins")
+require("user.colorscheme")
+require("user.treesitter")
+require("user.fzf")
+require("user.lualine")
+require("user.gitsigns")
+require("user.comment")
+require("user.autopairs")

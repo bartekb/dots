@@ -44,6 +44,7 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   use { "wbthomason/packer.nvim" } 
+  use { "nvim-lua/plenary.nvim" }
   use { "lewis6991/impatient.nvim" }
   use { "catppuccin/nvim", as = "catppuccin" }
   use {
@@ -67,6 +68,7 @@ return packer.startup(function(use)
     'neovim/nvim-lspconfig',
     config = function() pcall(require, 'user.lspsadas') end,
   }
+  use { "jose-elias-alvarez/null-ls.nvim" }
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
