@@ -50,10 +50,10 @@ return packer.startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
   }
-  use { 'ibhagwan/fzf-lua',
-    -- optional for icon support
-    requires = { 'kyazdani42/nvim-web-devicons' }
-  }
+  use { 'kyazdani42/nvim-web-devicons' }
+  use { 'ibhagwan/fzf-lua'}
+  use { 'nvim-lualine/lualine.nvim' }
+  
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
