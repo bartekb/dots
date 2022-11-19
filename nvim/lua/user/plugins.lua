@@ -60,6 +60,14 @@ return packer.startup(function(use)
   use { "moll/vim-bbye" }
   use { "windwp/nvim-autopairs" } 
 
+  -- LSP support
+  use { 'williamboman/mason.nvim'}
+  use {'williamboman/mason-lspconfig.nvim'}
+  use {
+    'neovim/nvim-lspconfig',
+    config = function() pcall(require, 'user.lspsadas') end,
+  }
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
